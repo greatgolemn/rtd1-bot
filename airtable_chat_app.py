@@ -3,7 +3,7 @@ import openai
 import requests
 
 # === GPT Setup ===
-openai.api_key = OPENAI_API_KEY
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # === Streamlit UI ===
 st.set_page_config(page_title="พนักงาน กปภ. แชทบอท", page_icon="💬")

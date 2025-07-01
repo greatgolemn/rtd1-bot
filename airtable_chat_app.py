@@ -2,6 +2,14 @@ import streamlit as st
 import openai
 import requests
 
+# ดึงค่าจาก secrets.toml
+AIRTABLE_API_KEY = st.secrets["AIRTABLE_API_KEY"]
+AIRTABLE_BASE_ID = st.secrets["AIRTABLE_BASE_ID"]
+AIRTABLE_TABLE_NAME = st.secrets["AIRTABLE_TABLE_NAME"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+
+openai.api_key = OPENAI_API_KEY
+
 # === GPT Setup ===
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 

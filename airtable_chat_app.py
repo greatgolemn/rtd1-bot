@@ -1,5 +1,7 @@
 import streamlit as st
+st.write("---- DEBUG: st.secrets ----")
 st.write(st.secrets)
+st.write("---------------------------")
 import streamlit as st
 import openai
 import requests
